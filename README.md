@@ -1,10 +1,12 @@
 ---
-title: Telegraminnovations
-emoji: ⚡
-colorFrom: red
-colorTo: blue
+title: telegraminnovations
+emoji: 🐳
+colorFrom: yellow
+colorTo: green
 sdk: static
 pinned: false
+tags:
+  - deepsite
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
