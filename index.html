@@ -1,16 +1,458 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Telegram Mini-Apps & Bots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0088cc 0%, #00a8e8 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .telegram-btn {
+            background-color: #0088cc;
+            transition: all 0.3s ease;
+        }
+
+        .telegram-btn:hover {
+            background-color: #006699;
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+
+        .bot-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .bot-card:hover {
+            border-left-color: #0088cc;
+        }
+
+        .animated-bg {
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-image: linear-gradient(-45deg, #0088cc, #00a8e8, #6ec1e4, #0088cc);
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fab fa-telegram text-3xl"></i>
+                    <span class="text-xl font-bold">Telegram Innovations</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-blue-200 transition">Features</a>
+                    <a href="#bots" class="hover:text-blue-200 transition">Bots</a>
+                    <a href="#mini-apps" class="hover:text-blue-200 transition">Mini-Apps</a>
+                    <a href="#developers" class="hover:text-blue-200 transition">Developers</a>
+                </nav>
+                <div>
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-full font-medium hover:bg-blue-50 transition">
+                        Get Started
+                    </button>
+                </div>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="animated-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Revolutionize Telegram with <span class="underline decoration-wavy">Innovative Bots</span></h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Discover powerful mini-apps and intelligent bots that transform your Telegram experience beyond messaging.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="telegram-btn px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2">
+                    <i class="fab fa-telegram"></i> Explore Bots
+                </button>
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition">
+                    Build Your Own
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Telegram Bots & Mini-Apps?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Telegram's platform offers unparalleled opportunities for creating seamless, integrated experiences right within the messenger.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl text-center card-hover transition">
+                    <div class="feature-icon bg-blue-100 text-blue-600 mx-auto">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Lightning Fast</h3>
+                    <p class="text-gray-600">Telegram's infrastructure ensures your bots and apps respond instantly, with no lag or downtime.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl text-center card-hover transition">
+                    <div class="feature-icon bg-green-100 text-green-600 mx-auto">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Secure by Design</h3>
+                    <p class="text-gray-600">End-to-end encryption and privacy-focused architecture keep all interactions secure.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl text-center card-hover transition">
+                    <div class="feature-icon bg-purple-100 text-purple-600 mx-auto">
+                        <i class="fas fa-puzzle-piece text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Seamless Integration</h3>
+                    <p class="text-gray-600">Bots and mini-apps feel native to Telegram, with smooth UI and intuitive interactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Bots Section -->
+    <section id="bots" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Innovative Telegram Bots</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover bots that are changing how people use Telegram every day.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Bot 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm bot-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                            <i class="fas fa-robot text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">ShopBot</h3>
+                            <p class="text-gray-500 text-sm">E-commerce Assistant</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete shopping experience right in Telegram. Browse products, make payments, and track orders without leaving the app.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">Payments</span>
+                        <span class="bg-green-100 text-green-600 text-xs px-3 py-1 rounded-full">Catalog</span>
+                        <span class="bg-purple-100 text-purple-600 text-xs px-3 py-1 rounded-full">AI</span>
+                    </div>
+                    <button class="telegram-btn w-full py-2 rounded-lg text-white font-medium">
+                        Try Now <i class="fab fa-telegram ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Bot 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm bot-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-4">
+                            <i class="fas fa-language text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">TranslatePro</h3>
+                            <p class="text-gray-500 text-sm">Real-time Translation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Break language barriers with instant translation in chats and channels. Supports 100+ languages with voice recognition.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">AI</span>
+                        <span class="bg-yellow-100 text-yellow-600 text-xs px-3 py-1 rounded-full">Voice</span>
+                        <span class="bg-red-100 text-red-600 text-xs px-3 py-1 rounded-full">100+ Languages</span>
+                    </div>
+                    <button class="telegram-btn w-full py-2 rounded-lg text-white font-medium">
+                        Try Now <i class="fab fa-telegram ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Bot 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm bot-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-4">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">CryptoAlert</h3>
+                            <p class="text-gray-500 text-sm">Crypto Tracker</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Real-time cryptocurrency price alerts, portfolio tracking, and market analysis directly in your Telegram chats.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">Alerts</span>
+                        <span class="bg-yellow-100 text-yellow-600 text-xs px-3 py-1 rounded-full">Crypto</span>
+                        <span class="bg-pink-100 text-pink-600 text-xs px-3 py-1 rounded-full">API</span>
+                    </div>
+                    <button class="telegram-btn w-full py-2 rounded-lg text-white font-medium">
+                        Try Now <i class="fab fa-telegram ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini-Apps Showcase -->
+    <section id="mini-apps" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Game-Changing Mini-Apps</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Web apps that run seamlessly within Telegram with native feel and performance.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-10 items-center">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-blue-100 rounded-2xl blur opacity-75"></div>
+                        <div class="relative bg-white p-2 rounded-xl shadow-xl border border-gray-200">
+                            <div class="bg-gray-800 rounded-lg overflow-hidden">
+                                <div class="bg-gray-900 h-8 flex items-center px-4">
+                                    <div class="flex space-x-2">
+                                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                    </div>
+                                    <div class="text-white text-xs mx-auto">Telegram - FitnessApp</div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 rounded-lg">
+                                        <h3 class="font-bold text-xl mb-2">Today's Workout</h3>
+                                        <p class="text-sm opacity-90 mb-4">Complete 3 sets to unlock your achievement!</p>
+
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg mb-3">
+                                            <div class="flex justify-between mb-1">
+                                                <span>Push-ups</span>
+                                                <span>12/15</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                                <div class="bg-blue-400 h-2 rounded-full" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg mb-3">
+                                            <div class="flex justify-between mb-1">
+                                                <span>Squats</span>
+                                                <span>8/10</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                                <div class="bg-green-400 h-2 rounded-full" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+
+                                        <button class="w-full bg-white text-purple-600 py-2 rounded-lg font-bold mt-2">
+                                            Complete Workout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Fitness Companion</h3>
+                    <p class="text-gray-600 mb-6">Our Fitness mini-app transforms Telegram into your personal training assistant. Track workouts, set goals, and get personalized recommendations without installing another app.</p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Workout Tracking</h4>
+                                <p class="text-gray-600">Log exercises, sets, and reps with simple taps.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Progress Analytics</h4>
+                                <p class="text-gray-600">Visual charts show your improvement over time.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Community Challenges</h4>
+                                <p class="text-gray-600">Compete with friends in fitness challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="telegram-btn mt-6 px-6 py-3 rounded-lg text-white font-bold">
+                        Launch FitnessApp <i class="fab fa-telegram ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section id="developers" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Build Your Own Telegram Innovation</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Telegram's Bot API and WebApp platform make it easy to create powerful integrations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-3">Comprehensive Docs</h3>
+                    <p class="opacity-90 mb-4">Detailed documentation with examples for all API methods and features.</p>
+                    <a href="#" class="text-white font-medium underline">Read Documentation →</a>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-3">Starter Kits</h3>
+                    <p class="opacity-90 mb-4">Pre-configured templates for popular frameworks to kickstart your project.</p>
+                    <a href="#" class="text-white font-medium underline">Explore Templates →</a>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">👨‍💻</div>
+                    <h3 class="text-xl font-bold mb-3">Developer Community</h3>
+                    <p class="opacity-90 mb-4">Join thousands of developers sharing knowledge and solutions.</p>
+                    <a href="#" class="text-white font-medium underline">Join Community →</a>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold mb-6">Ready to Build Something Amazing?</h3>
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition">
+                    Start Developing Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fab fa-telegram text-2xl text-blue-400"></i>
+                        <span class="text-xl font-bold">Telegram Innovations</span>
+                    </div>
+                    <p class="text-gray-400">Pushing the boundaries of what's possible with Telegram bots and mini-apps.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Featured Bots</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mini-Apps</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">API Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Enterprise Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 Telegram Innovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for demo purposes
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to all cards
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Mobile menu toggle would go here in a real implementation
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=S-Dreamer/telegraminnovations" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
